@@ -30,6 +30,7 @@ void simulateMouseRightClickPressed()
 	SendInput(1, &input, sizeof(INPUT));
 }
 
+
 void simulateEnterKeyPressed()
 {
 	INPUT input;
