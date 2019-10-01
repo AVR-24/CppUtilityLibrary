@@ -55,8 +55,7 @@ void simulateLettersFromAWord(string s)
 
 	//Usage: 
 	//The function receives a string, it will type it within the time of 5 seconds.
-	//Maximum size of string: 1000 characters
-	//WARNING: FUNCTION ONLY ACCEPTS UPPER CASE LETTERS AND DO NOT ACCEPT NUMBERS
+	//This function does not type spaces or symbols.
 	INPUT input;
 	
 	std::for_each(s.begin(), s.end(), [](char& c) {
@@ -68,6 +67,8 @@ void simulateLettersFromAWord(string s)
 	input.ki.time = 0;
 	input.ki.dwExtraInfo = 0;
 
+	Sleep(5000);
+	
 	vector <char> v1;
 
 	for (int i = 0; i < s.length(); i++)
